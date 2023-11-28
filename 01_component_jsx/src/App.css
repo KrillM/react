@@ -1,11 +1,14 @@
-/* BEM 네이밍 규칙 */
-/* .funCompoment__test-css--active {
-    background-color: purple;
-    font-size: 40px;
-    color: white;
-} */
-
 .test-css {
     background-color: yellow;
     font-size: 30px;
+}
+
+/* BEM 네이밍 규칙 */
+.Sector__section {
+    margin-bottom: 20px;
+    border: 2px solid blue;
+}
+
+.Sector__title {
+    color: red;
 }
