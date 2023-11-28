@@ -1,5 +1,8 @@
 import './App.css';
 import Calculate from './components/Calculate';
+import Food from './components/Food';
+import ClassProps from './components/ClassProps';
+import Card from './components/Card';
 
 const name = "몽이";
 const animal = "강이지";
@@ -13,7 +16,11 @@ function App() {
     //     </h2> 
     // </div>
     
-    <Calculate />
+    // <Calculate />
+    // <Food />
+    
+   // <ClassProps valid="콘솔 띄우기 성공"/>
+   <Card title="맨하튼 프로젝트" author="줄리어스 로버트 오펜하이머" price="20,000원" type="물리화학"/>
   );
 }
 
