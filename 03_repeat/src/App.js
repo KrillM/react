@@ -7,9 +7,9 @@ import ScrollBox from './components/ScrollBox';
 function App() {
   return (
     <>
-      {/* <ListMap />
+      <ListMap />
       <FunRef /><br />
-      <ClassRef /><br /> */}
+      <ClassRef /><br />
       <ScrollBox />
     </>
   );

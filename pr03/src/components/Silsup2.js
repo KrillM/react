@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 
 const Silsup2 = () => {
+    const input = useRef();
     const crewList = [
 
     ]
@@ -11,11 +12,16 @@ const Silsup2 = () => {
     const [newTitle, setNewTitle] = useState("");
 
     const addTitle = () => {
-        const newObj = { id:idNum , name: newName, title: newTitle }
-        setIdNum(idNum + 1)
-        const newList = list.concat(newObj)
-        setList(newList)
-        setNewTitle("")
+        if(newName !== '' && newTitle !== ''){
+            const newObj = { id:idNum , name: newName, title: newTitle }
+            setIdNum(idNum + 1)
+            const newList = list.concat(newObj)
+            setList(newList)
+            setNewTitle("")
+        }
+        else{
+            input.current.focus();
+        }
     }
 
     const deleteTitle = (id) => {
@@ -26,9 +32,9 @@ const Silsup2 = () => {
     return(
         <>
             <label>작성자: </label>
-            <input type='text' value={newName} onChange={(e) => {setNewName(e.target.value)}}/>{" "}
+            <input ref={input} type='text' value={newName} onChange={(e) => {setNewName(e.target.value)}}/>{" "}
             <label>제목: </label>
-            <input type='text' value={newTitle} onChange={(e) => {setNewTitle(e.target.value)}}/>{" "}
+            <input ref={input} type='text' value={newTitle} onChange={(e) => {setNewTitle(e.target.value)}}/>{" "}
             <button onClick={addTitle}>작성</button>
 
             <table>
