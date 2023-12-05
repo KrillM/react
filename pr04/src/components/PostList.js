@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 
 const fakePosts = [
     {
@@ -60,11 +61,19 @@ const PostList = () => {
   useEffect(() => {
     console.log("✅ update")
 
-    const timeoutId = setTimeout(() => {
-      setPost(fakePosts);
-    }, 2000);
+    // const timeoutId = setTimeout(() => {
+    //   setPost(fakePosts);
+    // }, 2000);
 
-    return () => clearTimeout(timeoutId);
+    axios({
+      method: "get",
+      url: "https://jsonplaceholder.typicode.com/posts",
+    }).then((res)=>{
+      console.log("res ", res.data)
+      setTimeout(() => {
+        setPost(res.data);
+      }, 2000);
+    })
   }, []);
 
   const fakeLists = () => {
