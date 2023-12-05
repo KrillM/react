@@ -1,0 +1,90 @@
+// :root {
+//     --color-main : red
+// }
+
+// div {
+//     color : var(--color-main)
+// }
+
+$color-main: red;
+
+.scss-bumo {
+    color: $color-main;
+    // width: 100% - 200;
+    // background-color: gold;
+}
+
+.scss-bumo{
+    ul {
+        background-color: black;
+        color: white;
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    ol {
+        background-color: yellow;
+        color: darkblue;
+    }
+}
+
+@mixin jungsagakhyong($size) {
+    width: $size;
+    height: $size;
+}
+
+.box1 {
+    @include jungsagakhyong(100px);
+    background-color: green;
+}
+
+@mixin jiksagakhyong($size1, $size2) {
+    width: $size1;
+    height: $size2;
+}
+
+.soryeon {
+    @include jiksagakhyong(300px, 150px);
+    background-color: crimson;
+    color: gold;
+    font-size: 32px;
+}
+
+// 네모바지 스폰지밥
+.origin-sass{
+    display: flex;
+
+    .box{
+        @include jungsagakhyong(100px);
+
+        &.red{
+            background-color: red;
+        }
+        &.blue{
+            background-color: blue;
+        }
+        &.purple{
+            background-color: purple;
+        }
+        &.yellow{
+            background-color: yellow;
+        }
+        &.green{
+            background-color: green;
+        }
+    }
+}
+
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn-primary{
+    @extend .btn;
+    background-color: yellowgreen;
+    color: darkblue;
+}
