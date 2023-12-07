@@ -1,4 +1,4 @@
-import '../styles/origin.scss';
+import '../styles/origin.scss'; // 두 개 이상 import하지 말 것
 
 function SassComponent() {
     return(
