@@ -1,0 +1,47 @@
+@mixin box() {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+@mixin tl($tt, $ll) {
+    top: $tt;
+    left: $ll;
+}
+
+.larva {
+    position: relative;
+    
+    .body{
+        @include box();
+
+        &.body1{
+            @include tl(100px, 100px);
+            background-color: rgb(0, 0, 166);
+        }
+        &.body2{
+            @include tl(150px, 160px);
+            background-color: rgb(36, 61, 206);
+        }
+        &.body3{
+            @include tl(190px, 200px);
+            background-color: rgb(52, 118, 231);
+        }
+        &.body4{
+            @include tl(240px, 220px);
+            background-color: rgb(47, 146, 233);
+        }
+        &.body5{
+            @include tl(280px, 280px);
+            background-color: rgb(140, 191, 253);
+            z-index: 10;
+        }
+    }
+}
+
+.larva .grass {
+    position: absolute;
+    top: 260px;
+    left: 0;
+}

@@ -1,7 +1,8 @@
 import './App.css';
 // import OriginCss from './components/OriginCss';
 // import ModuleCss from './components/ModuleCss';
-import SassComponent from './components/SassComponent';
+// import SassComponent from './components/SassComponent';
+import StyledComponent from './components/StyledComponent';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <br/>
       <ModuleCss /> */}
 
-      <SassComponent />
+      <StyledComponent />
     </>
   );
 }
