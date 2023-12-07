@@ -7,7 +7,8 @@ import './App.css';
 // import UseMemoEx from './hooks/UseMemoEx';
 // import UseCallbackEx from './hooks/UseCallbackEx';
 // import UseCallbackEx2 from './hooks/UseCallbackEx2';
-import UseReducer from './hooks/UseReducer';
+// import UseReducer from './hooks/UseReducer';/
+import CustomHookEx from './hooks/CustomHookEx';
 
 function App() {
   // const [postId, setPostId] = useState(1);
@@ -20,7 +21,7 @@ function App() {
       {/* <UseCallbackEx2 postId={postId} />
       <button onClick={() => setPostId(postId + 1)}>+1</button> */}
 
-      <UseReducer />
+      <CustomHookEx />
     </>
   );
 }
