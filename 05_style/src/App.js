@@ -5,10 +5,12 @@ import './App.css';
 // import SassComponent from './components/SassComponent';
 // import StyledComponent from './components/StyledComponent';
 // import UseMemoEx from './hooks/UseMemoEx';
+import Silsup02 from './practice/Silsup03';
 // import UseCallbackEx from './hooks/UseCallbackEx';
 // import UseCallbackEx2 from './hooks/UseCallbackEx2';
 // import UseReducer from './hooks/UseReducer';/
-import CustomHookEx from './hooks/CustomHookEx';
+// import CustomHookEx from './hooks/CustomHookEx';
+// import Haedap02 from './practice/Haedap02';
 
 function App() {
   // const [postId, setPostId] = useState(1);
@@ -21,7 +23,8 @@ function App() {
       {/* <UseCallbackEx2 postId={postId} />
       <button onClick={() => setPostId(postId + 1)}>+1</button> */}
 
-      <CustomHookEx />
+      {/* <UseMemoEx /> */}
+      <Silsup02 />
     </>
   );
 }
