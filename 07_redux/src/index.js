@@ -42,10 +42,30 @@
 // );
 
 // #3. redux structure
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// import './index.css';
+// import AppNew2 from './AppNew2';
+
+// import { Provider } from "react-redux";
+// import { configureStore } from "@reduxjs/toolkit";
+// import { composeWithDevTools } from 'redux-devtools-extension';
+
+// import rootReducer from "./modules";
+
+// const store = configureStore({reducer: rootReducer}, composeWithDevTools());
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <Provider store={store}>
+//     <AppNew2 />
+//   </Provider>
+// );
+
+// #4. redux 구조화 + container component 폴더 / presentational component 폴더 분리
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import AppNew2 from './AppNew2';
+import AppNew3 from './AppNew3';
 
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
@@ -57,6 +77,6 @@ const store = configureStore({reducer: rootReducer}, composeWithDevTools());
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
-    <AppNew2 />
+    <AppNew3 />
   </Provider>
 );

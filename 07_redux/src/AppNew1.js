@@ -41,8 +41,8 @@ function Box4() {
     return (
         <div className="box">
             <h3>number: {number}</h3>
-            <button onClick={()=>dispatch({type: 'increment'})}>+</button>
-            <button onClick={()=>dispatch({type: 'decrement'})}>-</button>
+            <button onClick={()=>dispatch({type: 'increment'})}> + </button>
+            <button onClick={()=>dispatch({type: 'decrement'})}> - </button>
         </div>
     );
 }
