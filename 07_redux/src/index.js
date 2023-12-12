@@ -18,6 +18,7 @@ import AppNew from './AppNew';
 // 추가된 부분
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 const initialValue = {number: 100};
 
@@ -32,8 +33,7 @@ const reducer = (state = initialValue, action) => {
   }
 }
 
-const store = configureStore({reducer: reducer})
-
+const store = configureStore({reducer: reducer}, composeWithDevTools());
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
