@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import "./App.css";
 
-function AppNew() {
+function AppNew1() {
     return (
         <>
             <Box1 />
@@ -47,4 +47,4 @@ function Box4() {
     );
 }
 
-export default AppNew;
+export default AppNew1;
