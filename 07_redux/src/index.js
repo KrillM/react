@@ -13,7 +13,7 @@
 // import React from 'react';
 // import ReactDOM from 'react-dom/client';
 // import './index.css';
-// import AppNew from './AppNew';
+// import AppNew from './AppNew1';
 
 // // 추가된 부분
 // import { Provider } from "react-redux";
